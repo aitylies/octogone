@@ -4,8 +4,8 @@ export default class Actor{
     this.image = image;
     this.health = health;
     this.lvl = lvl;
-  },
-  function attack(cible) {
+  }
+  attack(cible) {
     if ( this.health > 0 ) {
       let degat = this.force;
       alert(`${this.name} attaque ${cible.name} et lui inflige : ${degat} point(s) de dégâts.` );
@@ -20,7 +20,7 @@ export default class Actor{
     } else {
       alert(`${this.name} ne peut pas attaquer, il est mort ...`);
     }
-  },
+  }
 
 
 
